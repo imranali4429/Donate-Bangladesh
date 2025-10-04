@@ -1,4 +1,4 @@
-# Donate Bangladesh 🌍🇧🇩
+# Donate Bangladesh 
 
 **Donate Bangladesh** is a simple donation platform built using **HTML**, **TailwindCSS**, **DaisyUI**, and **Vanilla JavaScript**.  
 The main focus of this project is **DOM manipulation** and **reusable JavaScript functions** to provide a clean, modular, and maintainable codebase.
@@ -56,7 +56,8 @@ Feel free to fork this repo and submit a pull request.
    (No extra build tools required — it’s a plain HTML/CSS/JS project.)
 
 💡 Author
-Made with ❤️ by Imran Ali Rony
+Made with
+ by Imran Ali Rony
 
 💡 GitHub Link
 
