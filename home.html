@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home page</title>
+    <!-- daisy uI link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="max-w-screen-lg mx-auto">
+    <!-- navbar start  -->
+    <header>
+      <!-- navbar -->
+      <nav
+        class="grid grid-cols-3 justify-between grid-rows-2 navbar bg-gray/80 backdrop-blur-sm fixed top-0 left-0 shadow-md z-50 lg:px-20 items-center pt-0"
+      >
+        <!-- left side  -->
+        <div class="justify-self-start">
+          <a class="btn btn-blog text-xl bg-lime-300">Blog</a>
+        </div>
+        <!-- middle side -->
+        <div class="flex space-x-2 justify-self-center">
+          <img class="w-6 h-6" src="assets/logo.png" alt="logo" srcset="" />
+          <h2 class="text-xl font-semibold text-black">Donate Bangladesh</h2>
+        </div>
+        <!-- right side  -->
+        <div
+          class="flex items-center bg-gray-200 p-2 rounded-md justify-self-end"
+        >
+          <img
+            class="w-5 h-5 mr-2"
+            src="assets/coin.png"
+            alt="coin"
+            srcset=""
+          />
+          <h3
+            id="header-amount"
+            class="flex justify-center text-xl text-gray-600 mr-2"
+            data-amount="5000"
+          >
+            5000
+          </h3>
+          <h3 class="text-xl text-gray-600">BDT</h3>
+        </div>
+        <!-- down button -->
+        <div class="text-center col-span-3 space-x-16 mb-1 mt-1">
+          <button id="donation-btn" class="btn bg-lime-300 text-black">
+            Donation
+          </button>
+          <button id="history-btn" class="btn">History</button>
+        </div>
+      </nav>
+    </header>
+    <!-- navbar end  -->
+
+    <main>
+      <div id="donation-cards-container" class="mt-40 space-y-10">
+        <!-- 1st card  -->
+        <div class="card lg:grid lg:grid-cols-2 bg-base-100 shadow-sm">
+          <!-- img -->
+          <figure>
+            <img src="assets/noakhali.png" alt="Album" />
+          </figure>
+          <!-- card body  -->
+          <div class="card-body pb-0">
+            <!-- donation amount BDT -->
+            <div
+              class="flex items-center self-start bg-gray-200 p-2 rounded-md"
+            >
+              <img
+                class="w-5 h-5 mr-2"
+                src="assets/coin.png"
+                alt="coin"
+                srcset=""
+              />
+              <h3
+                id="card-1-total-DA"
+                class="flex justify-center text-xl text-gray-600 mr-2"
+                data-amount="5000"
+              >
+                5000
+              </h3>
+              <h3 class="text-xl text-gray-600">BDT</h3>
+            </div>
+            <!-- -------------------------------------- -->
+            <!-- text  -->
+            <div>
+              <h2 id="card-1-title" class="card-title mb-3">
+                Donate for Flood at Noakhali, Bangladesh
+              </h2>
+              <p>
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
+            </div>
+            <!-- -------------------------------------- -->
+            <!-- input field and button -->
+            <div class="card-actions justify-end space-y-10 mt-7">
+              <input
+                id="card-1-input-DA"
+                class="input w-full"
+                type="text"
+                placeholder="Write Donation Amount"
+              />
+
+              <button
+                id="card-1-donate-btn"
+                class="btn w-full bg-lime-300 text-black self-end"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd card  -->
+        <div class="card lg:grid lg:grid-cols-2 bg-base-100 shadow-sm">
+          <figure>
+            <img src="assets/feni.png" alt="Album" />
+          </figure>
+          <div class="card-body pb-0">
+            <!-- donation BDT -->
+            <div
+              class="flex items-center self-start bg-gray-200 p-2 rounded-md"
+            >
+              <img
+                class="w-5 h-5 mr-2"
+                src="assets/coin.png"
+                alt="coin"
+                srcset=""
+              />
+              <h3
+                id="card-2-total-DA"
+                class="flex justify-center text-xl text-gray-600 mr-2"
+                data-amount="7000"
+              >
+                7000
+              </h3>
+              <h3 class="text-xl text-gray-600">BDT</h3>
+            </div>
+            <!-- -------------------------------------- -->
+            <div>
+              <h2 id="card-2-title" class="card-title mb-3">
+                Donate for Flood Relief in Feni,Bangladesh
+              </h2>
+              <p>
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
+              <div class="card-actions justify-end space-y-10 mt-7">
+                <input
+                  id="card-2-input-DA"
+                  class="input w-full"
+                  type="text"
+                  placeholder="Write Donation Amount"
+                />
+
+                <button
+                  id="card-2-donate-btn"
+                  class="btn w-full bg-lime-300 text-black"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3rd card  -->
+        <div
+          class="card lg:grid lg:grid-cols-2 bg-base-100 shadow-sm space-y-5"
+        >
+          <figure>
+            <img src="assets/quota-protest.png" alt="Album" />
+          </figure>
+          <div class="card-body pb-0">
+            <!-- donation BDT -->
+            <div
+              class="flex items-center self-start bg-gray-200 p-2 rounded-md"
+            >
+              <img
+                class="w-5 h-5 mr-2"
+                src="assets/coin.png"
+                alt="coin"
+                srcset=""
+              />
+              <h3
+                id="card-3-total-DA"
+                class="flex justify-center text-xl text-gray-600 mr-2"
+                data-amount="12000"
+              >
+                12000
+              </h3>
+              <h3 class="text-xl text-gray-600">BDT</h3>
+            </div>
+            <!-- -------------------------------------- -->
+            <div>
+              <h2 id="card-3-title" class="card-title mb-3">
+                Aid for Injured in the Quota Movement
+              </h2>
+              <p>
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
+              <div class="card-actions justify-end mt-7">
+                <input
+                  id="card-3-input-DA"
+                  class="input w-full mt-14"
+                  type="text"
+                  placeholder="Write Donation Amount"
+                />
+
+                <button
+                  id="card-3-donate-btn"
+                  class="btn w-full bg-lime-300 text-black mt-10"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- transtion history -->
+      <div id="transtion-history" class="mt-40 hidden">
+        <h1 class="text-3xl font-bold text-center mb-10">Transtion History</h1>
+        <div id="history-cards-container" class="space-y-5"></div>
+      </div>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
