@@ -61,6 +61,9 @@ Feel free to fork this repo and submit a pull request.
 💡 Author
 Made with ❤️ by Imran Ali Rony
 
+
+💡 GitHub Link
+```
+https://github.com/imranali4429
 ```
 
-```
