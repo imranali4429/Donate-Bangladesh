@@ -61,6 +61,7 @@ function handleDonationAmount(
   });
 }
 
+// dynamically create html  
 function createHistoryCard(eventName, donationAmount, date) {
   const historyCardsContainer = document.getElementById(
     "history-cards-container"
@@ -77,6 +78,7 @@ function createHistoryCard(eventName, donationAmount, date) {
   historyCardsContainer.appendChild(newCard);
 }
 
+// show donation cards
 function showDonationCards() {
   document.getElementById("donation-cards-container").style.display = "block";
   document.getElementById("transtion-history").style.display = "none";

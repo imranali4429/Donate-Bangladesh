@@ -27,10 +27,10 @@ handleDonationAmount(
   "card-3-title"
 );
 
-// Event listeners for donation and history buttons
+// Event listeners for donation
 document
   .getElementById("donation-btn")
   .addEventListener("click", showDonationCards);
 
-  
+// history buttons
 document.getElementById("history-btn").addEventListener("click", showHistory);

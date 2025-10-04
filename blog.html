@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog page </title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog page</title>
+    <!-- daisy ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="max-w-screen-lg mx-auto">
+    <!-- navbar start  -->
+    <header>
+      <nav
+        class="grid grid-cols-3 justify-between grid-rows-2 navbar bg-gray/80 backdrop-blur-sm fixed top-0 left-0 shadow-md z-50 lg:px-20 items-center pt-3 mt-0"
+      >
+        <!-- left side  -->
+        <div class="justify-self-start">
+          <a href="home.html" class="btn btn-blog text-xl bg-lime-300">
+            Home
+          </a>
+        </div>
+        <!-- middle side -->
+        <div class="flex space-x-2 justify-self-center">
+          <img class="w-6 h-6" src="assets/logo.png" alt="logo" srcset="" />
+          <h2 class="text-xl font-semibold text-black">Donate Bangladesh</h2>
+        </div>
+        <!-- right side  -->
+        <div
+          class="flex items-center bg-gray-200 p-2 rounded-md justify-self-end"
+        >
+          <img
+            class="w-5 h-5 mr-2"
+            src="assets/coin.png"
+            alt="coin"
+            srcset=""
+          />
+          <h3
+            id="header-amount"
+            class="flex justify-center text-xl text-gray-600 mr-2"
+            data-amount="40000"
+          >
+            40000
+          </h3>
+          <h3 class="text-xl text-gray-600">BDT</h3>
+        </div>
+      </nav>
+    </header>
+    <!-- navber end  -->
+
+    <!-- accordin start  -->
+    <div class="join join-vertical bg-base-100 mt-40 w-full">
+      <h1 class="font-extrabold text-5xl mb-6">Important FAQ?</h1>
+      <!-- 1st  -->
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" checked="checked" />
+        <div class="collapse-title font-bold">
+          What is the DOM (Document Object Model)?
+        </div>
+        <div class="collapse-content text-sm">
+          The DOM (Document Object Model) is a programming interface for web
+          documents. <br />
+          The browser takes your HTML and turns it into a tree-like structure
+          called the DOM. Every HTML element, attribute, and text becomes a node
+          (object) in that tree. <br />
+          With JavaScript, you can use the DOM to read, modify, add, or delete
+          elements, and also handle events (like clicks, inputs, etc.).
+        </div>
+      </div>
+      <!-- 2nd -->
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title font-bold">
+          How do you select an element from the dom?
+        </div>
+        <div class="collapse-content text-sm">
+          1. By Id <br />
+          2. By Class Name <br />
+          3. Tag name
+          <br />
+          4. By Query Selector
+          <br />
+          5. By Event Listener
+        </div>
+      </div>
+      <!-- 3rd -->
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title font-semibold">
+          what is event delegation on the do m and why is it useful?
+        </div>
+        <div class="collapse-content text-sm">
+          Event Delegation is a technique in JavaScript where you attach a
+          single event listener to a parent element instead of attaching
+          separate event listeners to each child element. <br />
+          📌 Why is it Useful?
+          <br />
+          Efficiency Instead of adding many event listeners to multiple child
+          elements, you add just one listener to the parent. <br />
+          This reduces memory usage and improves performance. <br />
+          Dynamic Content Handling If new child elements are added later (e.g.,
+          new accordion panels or list items), you don't need to add event
+          listeners to them manually. <br />
+          The parent's event listener will automatically handle events for those
+          new elements. Cleaner Code Keeps your JavaScript simpler and easier to
+          maintain.
+        </div>
+      </div>
+      <!-- 4th -->
+      <div class="collapse collapse-arrow join-item border-base-300 border">
+        <input type="radio" name="my-accordion-4" />
+        <div class="collapse-title font-semibold">
+          what is event delegation on the do m and why is it useful?
+        </div>
+        <div class="collapse-content text-sm">
+          Attributes
+          <br />
+          1.getAttribute() → read <br />
+          2. setAttribute() → change/add <br />
+          3. removeAttribute() → remove <br />
+          4. toggleAttribute() → toggle <br />
+          5. removeAttribute() → remove Use in Accordion: track active panel
+          (aria-expanded, data-*) <br />
+          <br />
+          Styles
+          <br />
+          1.element.style.property → change inline CSS <br />
+          2. classList.add/remove/toggle → change classes (preferred with
+          Tailwind) <br />
+          3. Use in Accordion: show/hide content, highlight active button
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
