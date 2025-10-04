@@ -27,20 +27,23 @@ The main focus of this project is **DOM manipulation** and **reusable JavaScript
 
 ## 📂 Project Structure
 
+## 📂 Project Structure
+
+````plaintext
 donate-bangladesh/
 │
-├── home.html # Main HTML file
-├── /assets # Images, icons, etc.
+├── home.html          # Main HTML file
+├── /assets            # Images, icons, etc.
 ├── /js
-│ ├── utilities.js # Reusable functions
-│ └── main.js # DOM events and main logic
-└── README.md # Project documentation
+│   ├── utilities.js   # Reusable functions
+│   └── main.js        # DOM events and main logic
+└── README.md          # Project documentation
+---
 
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 Feel free to fork this repo and submit a pull request.
 
----
 
 ## ⚙️ Setup & Installation
 
@@ -49,7 +52,7 @@ Feel free to fork this repo and submit a pull request.
    ```bash
    git clone https://github.com/your-username/donate-bangladesh.git
 
-   ```
+````
 
 2. Navigate to the project folder:
    ```bash
@@ -61,9 +64,8 @@ Feel free to fork this repo and submit a pull request.
 💡 Author
 Made with ❤️ by Imran Ali Rony
 
-
 💡 GitHub Link
+
 ```
 https://github.com/imranali4429
 ```
-
