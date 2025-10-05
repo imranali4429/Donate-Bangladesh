@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>home page</title>
     <!-- daisy uI link -->
-<link rel="stylesheet" href="dist/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ 
   </head>
   <body class="max-w-screen-lg mx-auto">
     <!-- navbar start  -->
     <header>
       <!-- navbar -->
       <nav
-        class="grid grid-cols-3 justify-between grid-rows-2 navbar   backdrop-blur-sm fixed top-0 left-0 shadow-md z-50 lg:px-20 items-center mt-0"
+        class="grid grid-cols-3 justify-between grid-rows-2 navbar backdrop-blur-sm fixed top-0 left-0 shadow-md z-50 lg:px-20 items-center mt-0"
       >
         <!-- left side  -->
         <div class="justify-self-start">
-          <a href="blog.html" class="btn btn-blog text-xl bg-lime-300 px-5"> Blog </a>
+          <a href="blog.html" class="btn btn-blog text-xl bg-lime-300 px-5">
+            Blog
+          </a>
         </div>
         <!-- middle side -->
         <div class="flex space-x-2 justify-self-center">
@@ -43,7 +52,9 @@
           <h3 class="text-xl text-gray-600">BDT</h3>
         </div>
         <!-- down button -->
-        <div class="text-center col-span-3 space-x-16 mb-1 mt-1 justify-self-center">
+        <div
+          class="text-center col-span-3 space-x-16 mb-1 mt-1 justify-self-center"
+        >
           <button id="donation-btn" class="btn bg-lime-300 text-black">
             Donation
           </button>
