@@ -58,6 +58,9 @@ function handleDonationAmount(
     const eventName = document.getElementById(cardTitleId).innerText;
     const date = new Date().toString();
     createHistoryCard(eventName, donationNumber, date);
+
+    // Show success modal
+    document.getElementById("success_modal").showModal();
   });
 }
 
