@@ -25,7 +25,7 @@ The main focus of this project is **DOM manipulation** and **reusable JavaScript
 
 ````plaintext
 donate-bangladesh/
-│
+│__blog.html
 ├── home.html          # Main HTML file
 ├── /assets            # Images, icons, etc.
 ├── /js
